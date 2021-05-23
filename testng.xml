@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Of TestNG">
+
+    <parameter name="uri" value="https://apis.map.qq.com" />
+    <parameter name="key" value="DBQBZ-CC5C3-TW236-3NGUO-ACZKE-4HF5M" />
+    <parameter name="secretkey" value="o3q7a9UU30q6LDysigl9GVLDiM5leC" />
+    <parameter name="locationSearchAPI" value="/ws/place/v1/search" />
+
+    <test verbose="2" name="腾讯地图">
+        <classes>
+            <class name="com.wl.TencentMap">
+                <methods>
+                    <include name="locationSearch" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners >
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>

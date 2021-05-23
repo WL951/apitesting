@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="腾讯地图"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="58.353">
+  <properties />
+  
+  
+            <testcase name="locationSearch" time="7.825" classname="com.wl.TencentMap" />
+                <testcase name="locationSearch" time="50.528" classname="com.wl.TencentMap" />
+      
+</testsuite>
